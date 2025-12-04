@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Prueba rápida o no</title>
+</head>
+<body>
+  <button id="btn">Haz la prueba</button>
+  <p id="out">Estado: esperando...</p>
+
+  <script>
+    document.getElementById("btn").addEventListener("click", () => {
+      const now = new Date().toLocaleString();
+      document.getElementById("out").textContent = "Funciona — " + now;
+      alert("Prueba OK: " + now);
+    });
+  </script>
+</body>
+</html>
